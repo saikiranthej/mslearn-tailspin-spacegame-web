@@ -7,10 +7,10 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: ubuntu-20.04
 
 variables:
-  buildConfiguration: 'Release'
+  buildConfiguration: '2.1'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
